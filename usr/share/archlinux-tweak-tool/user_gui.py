@@ -7,7 +7,7 @@ def gui(self, Gtk, vboxStack10, user, fn):
     """create a gui"""
     hbox4 = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
     lbl1 = Gtk.Label(xalign=0)
-    lbl1.set_text("Create A New User")
+    lbl1.set_text("Create A New User 🔥")
     lbl1.set_name("title")
     hbox4.pack_start(lbl1, False, False, 0)
 
