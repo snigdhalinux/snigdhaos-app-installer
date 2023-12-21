@@ -90,7 +90,7 @@ def gui(self, Gtk, vboxStack10, user, fn):
     hbox9 = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
     lbl_information = Gtk.Label(xalign=0)
     lbl_information.set_markup(
-        "The following groups are used for an administrator:\n\
+        "👉 The following groups are used for an administrator:\n\
 audio, video, network, storage, rfkill, wheel, autologin, sambashare 🔥"
     )
     hbox9.pack_start(lbl_information, False, False, 0)
@@ -138,7 +138,7 @@ audio, video, network, storage, rfkill, wheel, autologin, sambashare 🔥"
     hbox12 = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
     visudo_message = Gtk.Label(xalign=0)
     visudo_message.set_markup(
-        "On <b>Snigdha OS</b> remember to 'EDITOR=nano visudo' and uncomment the line '%wheel ALL=(ALL:ALL) ALL'\n\
+        "👉 On <b>Snigdha OS</b> remember to 'EDITOR=nano visudo' and uncomment the line '%wheel ALL=(ALL:ALL) ALL'\n\
 if you want your users to have administrator rights"
     )
     hbox12.pack_start(visudo_message, False, False, 0)
