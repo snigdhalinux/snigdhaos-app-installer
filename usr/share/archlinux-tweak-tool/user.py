@@ -57,16 +57,16 @@ def create_user(self):
                     )
                     fn.system(useradd)
                     fn.system(user_password + " | " + "chpasswd -c SHA512")
-                print("User has been created")
+                print("User has been created 🔥")
                 GLib.idle_add(
-                    fn.show_in_app_notification, self, "User has been created"
+                    fn.show_in_app_notification, self, "User has been created 🔥"
                 )
         else:
-            fn.show_in_app_notification(self, "Passwords are not the same")
-            fn.messagebox(self, "Message", "Passwords are not the same")
+            fn.show_in_app_notification(self, "🛈 Passwords are not the same")
+            fn.messagebox(self, "Message", "🛈 Passwords are not the same")
     else:
-        fn.show_in_app_notification(self, "First fill in all the fields")
-        fn.messagebox(self, "Message", "First fill in all the fields")
+        fn.show_in_app_notification(self, "First fill in all the fields 🚫")
+        fn.messagebox(self, "Message", "First fill in all the fields 🚫")
 
 
 def on_click_delete_user(self):
@@ -76,8 +76,8 @@ def on_click_delete_user(self):
         userdel = "userdel " + username
 
         fn.system(userdel)
-        print("User has been deleted - home folder has not been deleted")
-        GLib.idle_add(fn.show_in_app_notification, self, "User has been deleted")
+        print("User has been deleted - home folder has not been deleted!")
+        GLib.idle_add(fn.show_in_app_notification, self, "User has been deleted!")
 
 
 def on_click_delete_all_user(self):
@@ -87,7 +87,7 @@ def on_click_delete_all_user(self):
         userdel = "userdel -r -f " + username
 
         fn.system(userdel)
-        print("User has been deleted - home folder has been deleted")
+        print("User has been deleted - home folder has been deleted!")
         GLib.idle_add(
             fn.show_in_app_notification, self, "User and home folder has been deleted"
         )
