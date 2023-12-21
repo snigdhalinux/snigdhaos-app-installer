@@ -7,7 +7,7 @@ def gui(self, Gtk, vboxStack10, user, fn):
     """create a gui"""
     hbox4 = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
     lbl1 = Gtk.Label(xalign=0)
-    lbl1.set_text("Create User")
+    lbl1.set_text("Create A New User")
     lbl1.set_name("title")
     hbox4.pack_start(lbl1, False, False, 0)
 
@@ -18,27 +18,27 @@ def gui(self, Gtk, vboxStack10, user, fn):
     sep_text = "                       "
 
     label_name = Gtk.Label(xalign=0)
-    label_name.set_text("    Name")
+    label_name.set_text("    🛈 Name")
     name_sep = Gtk.Label(xalign=0)
     name_sep.set_text(sep_text)
 
     label_username = Gtk.Label(xalign=0)
-    label_username.set_text("    Username")
+    label_username.set_text("    🛈 Username")
     uname_sep = Gtk.Label(xalign=0)
     uname_sep.set_text(sep_text)
 
     label_account_type = Gtk.Label(xalign=0)
-    label_account_type.set_text("    Account type")
+    label_account_type.set_text("    🛈 Account type")
     account_sep = Gtk.Label(xalign=0)
     account_sep.set_text(sep_text)
 
     label_password = Gtk.Label(xalign=0)
-    label_password.set_text("    Password")
+    label_password.set_text("    🛈 Password")
     pwd_sep = Gtk.Label(xalign=0)
     pwd_sep.set_text(sep_text)
 
     label_confirm_password = Gtk.Label(xalign=0)
-    label_confirm_password.set_text("    Confirm password")
+    label_confirm_password.set_text("    🛈 Confirm password")
     conf_pwd_sep = Gtk.Label(xalign=0)
     conf_pwd_sep.set_text(sep_text)
 
@@ -91,18 +91,18 @@ def gui(self, Gtk, vboxStack10, user, fn):
     lbl_information = Gtk.Label(xalign=0)
     lbl_information.set_markup(
         "The following groups are used for an administrator:\n\
-audio, video, network, storage, rfkill, wheel, autologin, sambashare"
+audio, video, network, storage, rfkill, wheel, autologin, sambashare 🔥"
     )
     hbox9.pack_start(lbl_information, False, False, 0)
 
     hbox2 = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
-    apply_settings = Gtk.Button(label="Apply settings")
+    apply_settings = Gtk.Button(label="Apply")
     apply_settings.connect("clicked", self.on_click_user_apply)
     hbox2.pack_start(apply_settings, False, False, 0)
 
     hbox40 = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
     lbl_delete_user = Gtk.Label(xalign=0)
-    lbl_delete_user.set_text("Delete User")
+    lbl_delete_user.set_text("Delete User ❌")
     lbl_delete_user.set_name("title")
     hbox40.pack_start(lbl_delete_user, False, False, 0)
 
@@ -112,7 +112,7 @@ audio, video, network, storage, rfkill, wheel, autologin, sambashare"
 
     hbox7 = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
     hbox7_label = Gtk.Label(xalign=0)
-    hbox7_label.set_markup("<b>Beware - you could delete your own user account</b>")
+    hbox7_label.set_markup("<b>⚠️ Don't delete your own user account</b>")
     hbox7.pack_start(hbox7_label, False, False, 10)
 
     hbox8 = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
@@ -138,7 +138,7 @@ audio, video, network, storage, rfkill, wheel, autologin, sambashare"
     hbox12 = Gtk.Box(orientation=Gtk.Orientation.HORIZONTAL, spacing=10)
     visudo_message = Gtk.Label(xalign=0)
     visudo_message.set_markup(
-        "On <b>Arch Linux</b> remember to 'EDITOR=nano visudo' and uncomment the line '%wheel ALL=(ALL:ALL) ALL'\n\
+        "On <b>Snigdha OS</b> remember to 'EDITOR=nano visudo' and uncomment the line '%wheel ALL=(ALL:ALL) ALL'\n\
 if you want your users to have administrator rights"
     )
     hbox12.pack_start(visudo_message, False, False, 0)
